@@ -1,0 +1,11 @@
+{
+  "name": "backend-youtube-29-01-2025-chai",
+  "module": "index.js",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
