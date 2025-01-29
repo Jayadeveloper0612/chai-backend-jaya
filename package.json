@@ -6,9 +6,12 @@
     "@types/bun": "latest"
   },
   "scripts": {
-    "dev":"nodemon src/index.js"
+    "dev": "nodemon src/index.js"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "prettier": "^3.4.2"
   }
 }
