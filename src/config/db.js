@@ -8,10 +8,10 @@ const connectDB = async (req, res) => {
     );
     console.log(
       `\n MongoDB Connected !! DB HOST: ${connectionInstance.connection.host}`
-        .bgGreen.black
+        .bgGreen.black.italic
     );
   } catch (error) {
-    console.log(`MongoDB Connection Error : ${error}`.bgRed.white.italic);
+    console.log(`MongoDB Connection Error : ${error}`.bgRed.white.bold);
     process.exit(1);
   }
 };
