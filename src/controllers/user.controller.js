@@ -164,11 +164,11 @@ const logoutUser = asyncHandler(async (req, res) => {
     .json(new ApiResponse(200, {}, "User Logged Out Successfully!"))
 })
 
-//* ..********************* SESSION *******************.. */
+//* ..********************* REFRESH ACCESS TOKEN *******************.. */
 const refreshAccessToken = asyncHandler(async (req, res) => {
   const incomingRefreshToken = req.cookie.refreshToken || req.body.refreshToken
 
-  if (incomingRefreshToken) {
+  if (!incomingRefreshToken) {
     throw new ApiError(401, "Unauthorized request")
   }
 
